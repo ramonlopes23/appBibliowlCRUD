@@ -1,10 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".telaRemover">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- EditText para buscar o usuário -->
+
+    <!-- Botão de pesquisa -->
+    <EditText
+        android:id="@+id/etProcurar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar por nome, email ou CPF" />
+
+    <Button
+        android:id="@+id/btnProcurar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnProcurarAtt"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textSize="18sp" />
+
+    <!-- ListView para exibir os resultados -->
+    <ListView
+        android:id="@+id/listViewUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

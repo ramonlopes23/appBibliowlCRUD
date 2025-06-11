@@ -7,4 +7,65 @@
     android:layout_height="match_parent"
     tools:context=".telaAtualizar">
 
+    <Button
+        android:id="@+id/btnProcurarAtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="10dp"
+        android:text="Procurar"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewUsuarios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProcurar" />
+
+    <EditText
+        android:id="@+id/etProcurar"
+        android:layout_width="388dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Buscar por nome, email ou CPF"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnProcurarAtt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+
+        android:id="@+id/listViewUsuarios"
+        android:layout_width="408dp"
+        android:layout_height="594dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnMenuatt"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="3dp"
+        android:text="Menu"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewUsuarios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnProcurarAtt"
+        app:layout_constraintTop_toBottomOf="@+id/etProcurar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="?android:attr/selectableItemBackground">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewCPF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CPF:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewDataNasc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data de Nascimento:"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textViewNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nível:"
+        android:textSize="14sp" />
+
+</LinearLayout>

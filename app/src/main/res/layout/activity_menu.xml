@@ -7,4 +7,184 @@
     android:layout_height="match_parent"
     tools:context=".Menu">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="30dp"
+        android:text="Cadastrar"
+        android:textSize="16sp"
+        app:cornerRadius="0px"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/btnListar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="31dp"
+        android:text="Listar "
+        android:textSize="16sp"
+        app:cornerRadius="0px"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintStart_toEndOf="@+id/btnCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/btnAtualizar"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="89dp"
+        android:text="Atualizar "
+        android:textSize="16sp"
+        app:cornerRadius="0px"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintEnd_toStartOf="@+id/btnRemover"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/btnRemover"
+        android:layout_width="124dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="88dp"
+        android:text="Remover "
+        android:textSize="16sp"
+        app:cornerRadius="0px"
+        app:layout_constraintBottom_toTopOf="@+id/tvLogoff"
+        app:layout_constraintStart_toEndOf="@+id/btnAtualizar"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/tvLogoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="109dp"
+        android:text="Fazer Logoff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/btnRemover" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/btnListar"
+        app:srcCompat="@drawable/deleteuser" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/listusers" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"
+        app:srcCompat="@drawable/updateuser" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/adduser" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="59dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvLogoff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logoff" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="7dp"
+        android:text="Gerenciamento de Usuários"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

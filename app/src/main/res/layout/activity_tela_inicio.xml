@@ -5,6 +5,139 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".telaInicio">
+    tools:context=".telaLogin">
 
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="325dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="61dp"
+        android:text="Autenticação"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="334dp"
+        android:text="Email:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="329dp"
+        android:text="Senha:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtSenha"
+        android:layout_width="323dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnAutenticar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAutenticar"
+        android:layout_width="217dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="24dp"
+        android:text="Logar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="217dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="16dp"
+        android:text="Voltar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovoUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNovoUsuario"
+        android:layout_width="219dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="148dp"
+        android:text="Cadastrar-se"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="172dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="31dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNovoUsuario" />
 </androidx.constraintlayout.widget.ConstraintLayout>
